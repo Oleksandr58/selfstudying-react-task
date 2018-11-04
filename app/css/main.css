@@ -52,7 +52,7 @@ table {
   overflow: hidden; }
   .form__header {
     min-height: 150px;
-    background: url(/img/Sign_Up_Form.jpg) no-repeat;
+    background: url(../img/Sign_Up_Form.jpg) no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
     background-position: 50% 40%;
