@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Test for React</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">   
+    <link type="text/css" href="css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+  </head>
+  
+  <body>
+    <section class="form">
+      <header class="form__header">
+        <h1 class="form__title">Test for React</h1>
+      </header>
+      <form class="form__fields js-request_form">
+        <div class="form__field js-require__field">
+          <div class="form__inscription">First name <sup>*</sup></div>
+
+          <input type="text" class="form__input" name="First name" placeholder="First name *">
+
+          <div class="form__error js-form__error"></div>
+        </div>
+
+        <div class="form__field js-require__field">
+          <div class="form__inscription">Last name <sup>*</sup></div>
+
+          <input type="text" class="form__input" name="Last name" placeholder="Last name *">
+
+          <div class="form__error js-form__error"></div>
+        </div>
+
+        <div class="form__field js-require__field">
+          <div class="form__inscription">Your birthday <sup>*</sup></div>
+          <input type="datepicker" class="form__input js-form__date" name="Birthday" placeholder="Birthday *">
+   
+
+          <div class="form__error js-form__error"></div>
+        </div>
+
+        <div class="form__field js-require__field js-require__field--radio">
+          <div class="form__inscription">Gender <sup>*</sup></div>
+
+          <label class="form__radio_label">
+            <input type="radio" class="form__radio" value="1" name="Gender" >
+            Male
+          </label>
+
+          <label class="form__radio_label">
+              <input type="radio" class="form__radio" value="2" name="Gender" >
+              Female
+          </label>
+
+          <div class="form__error js-form__error"></div>
+        </div>
+
+        <div class="form__field js-require__field">
+            <div class="form__inscription">Your country <sup>*</sup></div>
+            
+            <select name="Country" class="form__input form__input--w_100 js-form__select" type="select">
+              <option value="0">...</option>
+              <option value="1">Great Britain</option>
+              <option value="2">Ukraine</option>
+              <option value="3">Germany</option>
+              <option value="4">France</option>
+              <option value="5">Columbia</option>
+              <option value="6">Canada</option>
+            </select>
+
+            <div class="form__error js-form__error"></div>
+          </div>
+
+          <div class="form__field js-require__field">
+              <div class="form__inscription">Your email <sup>*</sup></div>
+
+            <input type="email" class="form__input" name="Email" placeholder="Your password *">
+
+            <div class="form__error js-form__error"></div>
+          </div>
+
+          <div class="form__field js-require__field">
+            <div class="form__inscription">Your password <sup>*</sup></div>
+
+            <input type="password" class="form__input" name="Password" placeholder="Your password *">
+
+            <div class="form__error js-form__error"></div>
+          </div>
+
+          <div class="form__field js-require__field">
+            <div class="form__inscription">Your address <sup>*</sup></div>
+
+            <input type="text" class="form__input" name="Address" placeholder="Your address *">
+
+            <div class="form__error js-form__error"></div>
+          </div>
+
+          <div class="form__field">
+            <div class="form__inscription">Your notes</div>
+
+            <textarea type="text" class="form__input" name="Notes" placeholder="Your notes"></textarea>
+          </div>
+
+          <button type="submit" class="form__btn">Submit</button>
+      </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+  <html>

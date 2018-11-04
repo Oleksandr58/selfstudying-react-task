@@ -1,0 +1,125 @@
+.form {
+	background-color: $blue-light;
+	border-radius: 6px;
+	max-width: $mw-form;
+	width: 100%;
+	margin: 10px auto;
+	font-family: $font-face;
+	overflow: hidden;
+
+
+	&__header {
+		min-height: 150px;
+		background: url(/img/Sign_Up_Form.jpg) no-repeat;
+		background-size: cover;
+		background-position: 50% 40%;
+		color: $white-text;
+		font-size: $fs-title;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px;
+		box-shadow: $shadow-inset;
+	}
+
+	&__fields {
+		font-size: $fs-form;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 20px 30px;
+	}
+
+
+	&__field {
+		margin: 15px 0 5px 0;
+
+		&.error {
+			.form__input, {
+				border: 1px solid $red-error;
+			}
+			.form__radio {
+				outline: 1px solid $red-error;
+			}
+			
+			.form__error {
+				z-index: 1;
+				opacity: 1;
+			}
+		}
+	}
+
+	&__input {
+		border: $border-input;
+		font-weight: bold;
+		padding: 15px;
+		border-radius: 6px;
+		width: calc(100% - 34px);
+
+		&--w_100 {
+			width: 100%;
+		}
+
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			color: $grey-text;
+		}
+	}
+
+	&__error {
+		color: $red-error;
+		font-size: $fs-error;
+		font-weight: bold;
+		margin-top: 5px;
+		letter-spacing: 1px;
+		opacity: 0;
+		position: relative;
+		z-index: -1;
+		transition: opacity .3s;
+	}
+
+	&__inscription {
+		margin-bottom: 8px;
+	}
+
+	&__radio_label {
+		padding-left: 2px;
+		margin-right: 10px;
+	}
+
+	&__btn {
+		background: $blue-dark;
+		color: $white-text;
+		font-size: $fs-btn;
+		border: 0;
+		border-radius: 7px;
+		padding: 10px;
+		margin: 15px 0;
+		width: 100%;
+	}
+}
+
+.data {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 6px;
+	padding: 10px;
+
+
+	&__item {
+		font-size: $fs-form;
+		margin: 8px;
+	}
+}
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
