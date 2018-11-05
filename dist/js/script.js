@@ -81,7 +81,7 @@ function showError(field) {
 
     if (container && !container.hasClass('error')) {
         container.addClass('error');
-        if (!container.find('.js-form__error').text()) container.find('.js-form__error').text(getError(field));
+        container.find('.js-form__error').text(getError(field));
     }
 }
 
